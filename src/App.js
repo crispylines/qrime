@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         
         <p>
-        <a target="_blank" href="https://twitter.com/crispylines">qrime.eth</a>
+        <a href="https://twitter.com/crispylines">qrime.eth</a>
         </p>
         <p>is brewing</p>
        
