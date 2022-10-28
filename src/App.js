@@ -9,7 +9,6 @@ function App() {
         <p>
         <a href="https://twitter.com/crispylines">qrime.eth</a>
         </p>
-        <p>is brewing</p>
        
       </header>
     </div>
