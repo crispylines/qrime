@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <p>
-        <a href="https://twitter.com/crispylines">qrime.eth is loading..</a>
+        <a href="https://twitter.com/crispylines">qrime.eth is loading something..</a>
         </p>
     </div>
   );
