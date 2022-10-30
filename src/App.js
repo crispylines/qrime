@@ -4,13 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+     <p>
         <a href="https://twitter.com/crispylines">qrime.eth is loading..</a>
         </p>
-       
-      </header>
     </div>
   );
 }
