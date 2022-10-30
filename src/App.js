@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <p>
+      <p>
         <a href="https://twitter.com/crispylines">qrime.eth is loading..</a>
         </p>
     </div>
