@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         
         <p>
-        <a href="https://twitter.com/crispylines">qrime.eth is loading..</a>
+        qrime.eth is loading..
         </p>
        
       </header>
