@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         
         <p>
-        qrime.eth is loading..
+        qrime is loading..
         </p>
        
       </header>
