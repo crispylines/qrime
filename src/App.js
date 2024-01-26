@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         
         <p>
-        qrime is coming...
+        qrime is coming....
         </p>
        
       </header>
