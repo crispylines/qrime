@@ -12,7 +12,6 @@ function App() {
         <p className="zoom-on-hover" onClick={handleClick}>
           qrime is coming....
         </p>
-        <div className="stars"></div>
       </header>
     </div>
   );
