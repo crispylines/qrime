@@ -1,15 +1,13 @@
-
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App font-link">
       <header className="App-header">
-        
-        <p>
-        qrime is coming....
+        <p className="zoom-on-hover">
+          qrime is coming....
         </p>
-       
       </header>
     </div>
   );

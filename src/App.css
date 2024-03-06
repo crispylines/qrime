@@ -40,3 +40,11 @@
     transform: rotate(360deg);
   }
 }
+
+.zoom-on-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.2);
+}
