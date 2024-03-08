@@ -12,6 +12,8 @@ function App() {
         <p className="zoom-on-hover" onClick={handleClick}>
           qrime is coming....
         </p>
+        <hr/>
+        <p>Have you seen?</p>
       </header>
     </div>
   );
