@@ -10,10 +10,12 @@ function App() {
     <div className="App font-link">
       <header className="App-header">
         <p className="zoom-on-hover" onClick={handleClick}>
-          qrime is coming....
+          qrime is coming...
         </p>
-        <hr/>
-        <p>Have you seen?</p>
+        
+        <p className="zoom-on-hover" onClick={handleClick}>
+          are you paying attention?
+        </p>
       </header>
     </div>
   );
