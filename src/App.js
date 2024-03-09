@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const handleClick = () => {
-    window.open('https://twitter.com/crispylines', '_blank');
+    window.open('https://twitter.com/notqrime', '_blank');
   };
 
   return (
