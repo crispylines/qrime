@@ -60,5 +60,5 @@
 }
 
 .moving-text {
-  animation: moveText 14s infinite cubic-bezier(0.28, -0.75, 0.165, 1.02);
+  animation: moveText 14s infinite cubic-bezier(0.98, -0.55, -0.165, 1.50);
 }
