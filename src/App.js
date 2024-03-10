@@ -9,9 +9,11 @@ function App() {
   return (
     <div className="App font-link">
       <header className="App-header">
-        <p className="zoom-and-move-on-hover" onClick={handleClick}>
-          qrime is coming....
-        </p>
+        <div className="text-container">
+          <p className="text" onClick={handleClick}>
+            qrime is coming....
+          </p>
+        </div>
       </header>
     </div>
   );
