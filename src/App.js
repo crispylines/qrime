@@ -14,7 +14,7 @@ function App() {
 
     const newPosition = positions[Math.floor(Math.random() * positions.length)];
     setStyle({
-      transform: `translate(${newPosition.x}%, ${newPosition.y}%) scale(1.5)`,
+      transform: `translate(${newPosition.x}%, ${newPosition.y}%) scale(1.6)`,
     });
   };
 
