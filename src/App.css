@@ -51,7 +51,7 @@
   transform: scale(1.2);
 }
 
- @keyframes moveText {
+@keyframes moveText {
   0% { transform: translate(0, 0); }
   25% { transform: translate(20vw, -20vh); }
   50% { transform: translate(20vw, 20vh); }
@@ -61,5 +61,5 @@
 
 .moving-text {
   animation: moveText 14s infinite cubic-bezier(0.48, -0.75, 0.165, 1.02);
-} 
+}
 
