@@ -36,12 +36,12 @@ function App() {
           >
             qrime
           </button>
-          <button
+          {/* <button
             className="top-navigation-button"
             onClick={() => handleLinkClick('/two')}
           >
             qrime
-          </button>
+          </button> */}
         </nav>
         <p
           className="text"
