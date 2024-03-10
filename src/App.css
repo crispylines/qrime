@@ -1,3 +1,8 @@
+.App {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 .text {
   font-family: 'UnifrakturMaguntia', cursive;
   font-size: 20px;
@@ -24,6 +29,11 @@
   }
 }
 
+@keyframes drip-fall {
+  to {
+    transform: translateY(50px);
+  }
+}
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
