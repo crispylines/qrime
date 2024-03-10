@@ -1,10 +1,27 @@
-.App {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-.font-link {
+.text {
   font-family: 'UnifrakturMaguntia', cursive;
+  font-size: 20px;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-block;
+}
+
+.drip {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #FFFFFF transparent transparent transparent;
+  animation: drip-fall 1s infinite alternate ease-in-out;
+}
+
+@keyframes drip-fall {
+  to {
+    transform: translateY(50px);
+  }
 }
 
 /* .App-logo {
