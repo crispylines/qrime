@@ -6,10 +6,10 @@ function App() {
 
   const handleMouseEnter = () => {
     const positions = [
-      { x: Math.random() * 25, y: Math.random() * 25 },
-      { x: Math.random() * 25 + 25, y: Math.random() * 25 },
-      { x: Math.random() * 25, y: Math.random() * 25 + 25 },
-      { x: Math.random() * 25 + 25, y: Math.random() * 25 + 25 },
+      { x: Math.random() * -100, y: Math.random() * 150 },
+     { x: Math.random() * 50, y: Math.random() * -200 },
+     { x: Math.random() * -200, y: Math.random() * 100 },
+    { x: Math.random() * 150, y: Math.random() * -50 },
     ];
 
     const newPosition = positions[Math.floor(Math.random() * positions.length)];
@@ -45,11 +45,11 @@ function App() {
 export default App;
 
 
-// const handleMouseEnter = () => {
-//   const positions = [
-//     { x: Math.random() * -100, y: Math.random() * 150 },
-//     { x: Math.random() * 50, y: Math.random() * -200 },
-//     { x: Math.random() * -200, y: Math.random() * 100 },
+//  const handleMouseEnter = () => {
+//    const positions = [
+//      { x: Math.random() * -100, y: Math.random() * 150 },
+//      { x: Math.random() * 50, y: Math.random() * -200 },
+//      { x: Math.random() * -200, y: Math.random() * 100 },
 //     { x: Math.random() * 150, y: Math.random() * -50 },
 
 // export default App;
