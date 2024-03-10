@@ -22,19 +22,39 @@ function App() {
     setStyle({});
   };
 
-  const handleClick = () => {
-    window.open('https://twitter.com/notqrime', '_blank');
+  const handleLinkClick = (link) => {
+    window.open(link, '_blank');
   };
 
   return (
     <div className="App font-link">
       <header className="App-header">
+        <nav className="top-navigation">
+          <span
+            className="top-navigation-link"
+            onClick={() => handleLinkClick('https://example.com/link1')}
+          >
+            Link 1
+          </span>
+          <span
+            className="top-navigation-link"
+            onClick={() => handleLinkClick('https://example.com/link2')}
+          >
+            Link 2
+          </span>
+          <span
+            className="top-navigation-link"
+            onClick={() => handleLinkClick('https://example.com/link3')}
+          >
+            Link 3
+          </span>
+        </nav>
         <p
           className="text"
           style={style}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          onClick={handleClick}
+          onClick={() => handleLinkClick('https://twitter.com/notqrime')}
         >
           qrime is coming....
         </p>
