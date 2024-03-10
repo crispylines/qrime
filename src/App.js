@@ -32,7 +32,7 @@ function App() {
         <nav className="top-navigation">
           <button
             className="top-navigation-button"
-            onClick={() => handleLinkClick('https://example.com/link1')}
+            onClick={() => handleLinkClick('/')}
           >
             Link 1
           </button>
@@ -56,7 +56,7 @@ function App() {
           onMouseLeave={handleMouseLeave}
           onClick={() => handleLinkClick('https://twitter.com/notqrime')}
         >
-          qrime is coming....
+          qrime is coming
         </p>
       </header>
     </div>
