@@ -21,39 +21,42 @@ function App() {
   const handleMouseLeave = () => {
     setStyle({});
   };
+  
+  const history = useHistory();
 
   const handleLinkClick = (link) => {
-    window.open(link, '_blank');
+    history.push(link);
+  };
   };
 
   return (
-    <div className="App font-link">
-      <header className="App-header">
-        <nav className="top-navigation">
-          <button
-            className="top-navigation-button"
-            onClick={() => handleLinkClick('/one')}
+    <Router>
+      <div className="App font-link">
+        <header className="App-header">
+          <nav className="top-navigation">
+            <button
+              className="top-navigation-button"
+              onClick={() => handleLinkClick('/one')}
+            >
+              qrime
+            </button>
+          </nav>
+          <p
+            className="text"
+            style={style}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => handleLinkClick('https://twitter.com/notqrime')}
           >
-            qrime
-          </button>
-          {/* <button
-            className="top-navigation-button"
-            onClick={() => handleLinkClick('/two')}
-          >
-            qrime
-          </button> */}
-        </nav>
-        <p
-          className="text"
-          style={style}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          onClick={() => handleLinkClick('https://twitter.com/notqrime')}
-        >
-          qrime is coming
-        </p>
-      </header>
-    </div>
+            qrime is coming
+          </p>
+        </header>
+      </div>
+      <Switch>
+        <Route path="/one" component={One} />
+        {/* Define routes for other pages here */}
+      </Switch>
+    </Router>
   );
 }
 
