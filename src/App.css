@@ -43,13 +43,13 @@
   }
 }
 
-.zoom-on-hover {
+/* .zoom-on-hover {
   transition: transform 0.3s ease-in-out;
 }
 
 .zoom-on-hover:hover {
   transform: scale(1.10);
-}
+} */
 
 @keyframes moveText {
   0% { transform: translate(0, 0); }
