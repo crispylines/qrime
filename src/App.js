@@ -32,21 +32,21 @@ function App() {
         <nav className="top-navigation">
           <button
             className="top-navigation-button"
-            onClick={() => handleLinkClick('/')}
+            onClick={() => handleLinkClick('/one')}
           >
-            Link 1
+            qrime
           </button>
           <button
             className="top-navigation-button"
-            onClick={() => handleLinkClick('https://example.com/link2')}
+            onClick={() => handleLinkClick('/two')}
           >
-            Link 2
+            qrime
           </button>
           <button
             className="top-navigation-button"
-            onClick={() => handleLinkClick('https://example.com/link3')}
+            onClick={() => handleLinkClick('/three')}
           >
-            Link 3
+            qrime
           </button>
         </nav>
         <p
