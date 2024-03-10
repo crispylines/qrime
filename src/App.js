@@ -30,24 +30,24 @@ function App() {
     <div className="App font-link">
       <header className="App-header">
         <nav className="top-navigation">
-          <span
-            className="top-navigation-link"
+          <button
+            className="top-navigation-button"
             onClick={() => handleLinkClick('https://example.com/link1')}
           >
             Link 1
-          </span>
-          <span
-            className="top-navigation-link"
+          </button>
+          <button
+            className="top-navigation-button"
             onClick={() => handleLinkClick('https://example.com/link2')}
           >
             Link 2
-          </span>
-          <span
-            className="top-navigation-link"
+          </button>
+          <button
+            className="top-navigation-button"
             onClick={() => handleLinkClick('https://example.com/link3')}
           >
             Link 3
-          </span>
+          </button>
         </nav>
         <p
           className="text"

@@ -22,6 +22,24 @@
 .App-link {
   color: #FFFFFF;
 }
+.top-navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
 
+.top-navigation-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top-navigation-button:hover {
+  background-color: #0056b3;
+}
 
 
