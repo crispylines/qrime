@@ -29,13 +29,14 @@
 }
 
 .top-navigation-button {
-  background-color: #007bff;
+  background-color: #D3D3D3;
   color: #fff;
   border: none;
   padding: 10px 20px;
   margin-left: 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'UnifrakturMaguntia', cursive;
 }
 
 .top-navigation-button:hover {
