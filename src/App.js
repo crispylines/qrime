@@ -5,12 +5,16 @@ function App() {
   const [style, setStyle] = useState({});
 
   const handleMouseEnter = () => {
-    const newPositionX1 = Math.random() +50^2;
-    const newPositionY1 = Math.random() -120;
-    const newPositionX2 = Math.random() -50^2;
-    const newPositionY2 = Math.random() +120;
+    const positions = [
+      { x: Math.random() * 25, y: Math.random() * 25 },
+      { x: Math.random() * 25 + 25, y: Math.random() * 25 },
+      { x: Math.random() * 25, y: Math.random() * 25 + 25 },
+      { x: Math.random() * 25 + 25, y: Math.random() * 25 + 25 },
+    ];
+
+    const newPosition = positions[Math.floor(Math.random() * positions.length)];
     setStyle({
-      transform: `translate(${newPositionX}%, ${newPositionY}%) scale(1.4)`,
+      transform: `translate(${newPosition.x}%, ${newPosition.y}%) scale(1.2)`,
     });
   };
 
