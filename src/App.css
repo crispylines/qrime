@@ -37,45 +37,6 @@
   border-radius: 5px;
   cursor: pointer;
   font-family: 'UnifrakturMaguntia', cursive;
-  position: relative;
-  overflow: hidden;
-}
-
-.top-navigation-button::before {
-  content: '';
-  position: absolute;
-  width: 6px; /* Adjust as needed */
-  height: 12px; /* Adjust as needed */
-  background: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
-  border-radius: 50%;
-  animation: drip 2s infinite;
-}
-
-@keyframes drip {
-  0% {
-    transform: translateY(-150%) rotate(-45deg) scale(0);
-  }
-  50% {
-    transform: translateY(0) rotate(-45deg) scale(1);
-  }
-  100% {
-    transform: translateY(100%) rotate(-45deg) scale(0);
-  }
-}
-
-.top-navigation-button::before:nth-child(1) {
-  left: 25%; /* Adjust position as needed */
-  animation-delay: 0.3s; /* Adjust delay as needed */
-}
-
-.top-navigation-button::before:nth-child(2) {
-  left: 50%; /* Adjust position as needed */
-  animation-delay: 0.6s; /* Adjust delay as needed */
-}
-
-.top-navigation-button::before:nth-child(3) {
-  left: 75%; /* Adjust position as needed */
-  animation-delay: 0.9s; /* Adjust delay as needed */
 }
 
 .top-navigation-button:hover {
