@@ -5,8 +5,8 @@ function App() {
   const [style, setStyle] = useState({});
 
   const handleMouseEnter = () => {
-    const newPositionX = Math.random() * (0);
-    const newPositionY = Math.random() -500;
+    const newPositionX = Math.random() +-50;
+    const newPositionY = Math.random() -120;
     setStyle({
       transform: `translate(${newPositionX}%, ${newPositionY}%) scale(1.4)`,
     });
