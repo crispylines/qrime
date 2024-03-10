@@ -6,10 +6,10 @@ function App() {
 
   const handleMouseEnter = () => {
     const positions = [
-      { x: Math.random() * 10, y: Math.random() * 15 },
-      { x: Math.random() * 5, y: Math.random() * 20 },
-      { x: Math.random() * 20, y: Math.random() * 10 },
-      { x: Math.random() * 15, y: Math.random() * 5 },
+      { x: Math.random() * 100, y: Math.random() * 150 },
+      { x: Math.random() * 50, y: Math.random() * 200 },
+      { x: Math.random() * 200, y: Math.random() * 100 },
+      { x: Math.random() * 150, y: Math.random() * 50 },
     ];
 
     const newPosition = positions[Math.floor(Math.random() * positions.length)];
