@@ -42,12 +42,6 @@ function App() {
           >
             qrime
           </button>
-          <button
-            className="top-navigation-button"
-            onClick={() => handleLinkClick('/three')}
-          >
-            qrime
-          </button>
         </nav>
         <p
           className="text"
