@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [style, setStyle] = useState({});
+
+  const handleMouseEnter = () => {
+    const newPositionX = Math.random() * 100;
+    const newPositionY = Math.random() * 100;
+    setStyle({
+      transform: `translate(${newPositionX}%, ${newPositionY}%) scale(1.2)`,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setStyle({});
+  };
+
   const handleClick = () => {
     window.open('https://twitter.com/notqrime', '_blank');
   };
@@ -9,11 +23,15 @@ function App() {
   return (
     <div className="App font-link">
       <header className="App-header">
-        <div className="text-container">
-          <p className="text" onClick={handleClick}>
-            qrime is coming....
-          </p>
-        </div>
+        <p
+          className="text"
+          style={style}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          onClick={handleClick}
+        >
+          qrime is coming....
+        </p>
       </header>
     </div>
   );
