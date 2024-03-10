@@ -62,6 +62,7 @@
 .zoom-and-move-on-hover {
   position: relative;
   display: inline-block;
+  transform: scale(1); /* Define initial transform state */
   transition: transform 0.3s ease-in-out;
   animation: moveText 14s infinite cubic-bezier(0.48, -0.75, 0.165, 1.02);
 }
