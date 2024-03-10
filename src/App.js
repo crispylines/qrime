@@ -7,14 +7,14 @@ function App() {
   const handleMouseEnter = () => {
     const positions = [
       { x: Math.random() * -100, y: Math.random() * 150 },
-     { x: Math.random() * 50, y: Math.random() * -200 },
-     { x: Math.random() * -200, y: Math.random() * 100 },
-    { x: Math.random() * 150, y: Math.random() * -50 },
+      { x: Math.random() * 50, y: Math.random() * -200 },
+      { x: Math.random() * -200, y: Math.random() * 100 },
+      { x: Math.random() * 150, y: Math.random() * -50 },
     ];
 
     const newPosition = positions[Math.floor(Math.random() * positions.length)];
     setStyle({
-      transform: `translate(${newPosition.x}%, ${newPosition.y}%) scale(1.2)`,
+      transform: `translate(${newPosition.x}%, ${newPosition.y}%) scale(1.5)`,
     });
   };
 
@@ -31,25 +31,24 @@ function App() {
       <header className="App-header">
         <p
           className="text"
+          style={style}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           onClick={handleClick}
         >
-          <span className="drip"></span> qrime is coming....
+          qrime is coming....
         </p>
       </header>
     </div>
   );
 }
 
-export default App;
 
-
-//  const handleMouseEnter = () => {
-//    const positions = [
-//      { x: Math.random() * -100, y: Math.random() * 150 },
-//      { x: Math.random() * 50, y: Math.random() * -200 },
-//      { x: Math.random() * -200, y: Math.random() * 100 },
+// const handleMouseEnter = () => {
+//   const positions = [
+//     { x: Math.random() * -100, y: Math.random() * 150 },
+//     { x: Math.random() * 50, y: Math.random() * -200 },
+//     { x: Math.random() * -200, y: Math.random() * 100 },
 //     { x: Math.random() * 150, y: Math.random() * -50 },
 
-// export default App;
+export default App;
