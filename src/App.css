@@ -78,31 +78,31 @@
 
 /* Add multiple drips */
 .header-drip:nth-of-type(1) {
-  left: 5%; /* Adjust the position for the first drip */
+  left: 50%; /* Adjust the position for the first drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the first drip */
   animation-name: dripAnimation, dripDelay; /* Apply both animations to the first drip */
 }
 
 .header-drip:nth-of-type(2) {
-  left: 20%; /* Adjust the position for the second drip */
+  left: 200%; /* Adjust the position for the second drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the second drip */
   animation-name: dripAnimation, dripDelay; /* Apply both animations to the second drip */
 }
 
 .header-drip:nth-of-type(3) {
-  left: 35%; /* Adjust the position for the third drip */
+  left: 350%; /* Adjust the position for the third drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the third drip */
   animation-name: dripAnimation, dripDelay; /* Apply both animations to the third drip */
 }
 
 .header-drip:nth-of-type(4) {
-  left: 50%; /* Adjust the position for the fourth drip */
+  left: 500%; /* Adjust the position for the fourth drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the fourth drip */
   animation-name: dripAnimation, dripDelay; /* Apply both animations to the fourth drip */
 }
 
 .header-drip:nth-of-type(5) {
-  left: 65%; /* Adjust the position for the fifth drip */
+  left: 600%; /* Adjust the position for the fifth drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the fifth drip */
   animation-name: dripAnimation, dripDelay; /* Apply both animations to the fifth drip */
 }
