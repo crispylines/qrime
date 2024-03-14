@@ -56,15 +56,21 @@
 
 .header-drip {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  height: 200px;
-  background: linear-gradient(to bottom, rgba(233, 212, 212, 0.738) 0%, #FFFFFF 500%);
-  animation: dripAnimation 2s infinite linear;
+  top: 0;
+  width: 5px; /* Increase the width */
+  height: 300px; /* Increase the height */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  animation: dripAnimation 2s infinite linear, dripDelay 4s infinite; /* Add dripDelay animation */
 }
 
 @keyframes dripAnimation {
-  0% { transform: translateX(-500%); }
-  100% { transform: translateX(-500%) translateY(100vh); }
+  0% { transform: translateY(-100%); } /* Start from above the screen */
+  100% { transform: translateY(100vh); } /* Move to the bottom of the screen */
+}
+
+@keyframes dripDelay {
+  0% { opacity: 0; } /* Initially hidden */
+  10% { opacity: 1; } /* Fade in */
+  90% { opacity: 1; } /* Stay visible */
+  100% { opacity: 0; } /* Fade out */
 }
