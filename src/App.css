@@ -59,8 +59,8 @@
   top: 0;
   width: 5px; /* Increase the width */
   height: 300px; /* Increase the height */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-  animation: dripAnimation 2s infinite linear, dripDelay 4s infinite; /* Add dripDelay animation */
+  background: linear-gradient(to bottom, rgba(251, 0, 0, 0.962) 0%, #FFFFFF 100%);
+  animation: dripAnimation 10s infinite linear, dripDelay 4s infinite; /* Add dripDelay animation */
 }
 
 @keyframes dripAnimation {
