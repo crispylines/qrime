@@ -65,6 +65,6 @@
 }
 
 @keyframes dripAnimation {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(-50%) translateY(100vh); }
+  0% { transform: translateX(-500%); }
+  100% { transform: translateX(-500%) translateY(100vh); }
 }
