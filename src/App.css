@@ -49,7 +49,7 @@
 }
 
 @keyframes fireAnimation {
-  0% { background-color: #FFD700; }
-  50% { background-color: #FF4500; }
-  100% { background-color: #FFD700; }
+  0% { background-color: #000000; }
+  50% { background-color: #53423b; }
+  100% { background-color: #6e9c6a; }
 }
