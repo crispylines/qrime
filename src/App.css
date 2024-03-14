@@ -60,15 +60,13 @@
   width: 5px; /* Increase the width */
   height: 300px; /* Increase the height */
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-  animation: dripAnimation 5s infinite linear; /* Increase the animation duration */
 }
 
 @keyframes dripAnimation {
-  0% { transform: translateY(-100%) translateX(0%); } /* Start from above the screen */
-  100% { transform: translateY(100vh) translateX(0%); } /* Move to the bottom of the screen */
+  0% { transform: translateY(-100%); } /* Start from above the screen */
+  100% { transform: translateY(100vh); } /* Move to the bottom of the screen */
 }
 
-/* Add the dripDelay animation */
 @keyframes dripDelay {
   0% { opacity: 0; } /* Initially hidden */
   10% { opacity: 1; } /* Fade in */
@@ -79,30 +77,25 @@
 /* Add multiple drips */
 .header-drip:nth-child(1) {
   left: 5%; /* Adjust the position for the first drip */
-  animation-delay: calc(2s * random()); /* Randomize the delay for the first drip */
-  animation-name: dripAnimation, dripDelay; /* Apply both animations to the first drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the first drip */
 }
 
 .header-drip:nth-child(2) {
   left: 20%; /* Adjust the position for the second drip */
-  animation-delay: calc(2s * random()); /* Randomize the delay for the second drip */
-  animation-name: dripAnimation, dripDelay; /* Apply both animations to the second drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the second drip */
 }
 
 .header-drip:nth-child(3) {
   left: 35%; /* Adjust the position for the third drip */
-  animation-delay: calc(2s * random()); /* Randomize the delay for the third drip */
-  animation-name: dripAnimation, dripDelay; /* Apply both animations to the third drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the third drip */
 }
 
 .header-drip:nth-child(4) {
   left: 50%; /* Adjust the position for the fourth drip */
-  animation-delay: calc(2s * random()); /* Randomize the delay for the fourth drip */
-  animation-name: dripAnimation, dripDelay; /* Apply both animations to the fourth drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the fourth drip */
 }
 
 .header-drip:nth-child(5) {
   left: 65%; /* Adjust the position for the fifth drip */
-  animation-delay: calc(2s * random()); /* Randomize the delay for the fifth drip */
-  animation-name: dripAnimation, dripDelay; /* Apply both animations to the fifth drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the fifth drip */
 }
