@@ -83,21 +83,21 @@
 }
 
 .header-drip:nth-child(2) {
-  left: 25%; /* Adjust the position for the second drip */
+  left: 2500%; /* Adjust the position for the second drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the second drip */
 }
 
 .header-drip:nth-child(3) {
-  left: 45%; /* Adjust the position for the third drip */
+  left: 4500%; /* Adjust the position for the third drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the third drip */
 }
 
 .header-drip:nth-child(4) {
-  left: 65%; /* Adjust the position for the fourth drip */
+  left: 6500%; /* Adjust the position for the fourth drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the fourth drip */
 }
 
 .header-drip:nth-child(5) {
-  left: 85%; /* Adjust the position for the fifth drip */
+  left: 8500%; /* Adjust the position for the fifth drip */
   animation-delay: calc(2s * random()); /* Randomize the delay for the fifth drip */
 }
