@@ -82,20 +82,20 @@
 
 .header-drip:nth-child(2) {
   left: 20%; /* Adjust the position for the second drip */
-  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the second drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 5.5s infinite; /* Apply both animations to the second drip with a slightly delayed start */
 }
 
 .header-drip:nth-child(3) {
   left: 35%; /* Adjust the position for the third drip */
-  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the third drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 6s infinite; /* Apply both animations to the third drip with a slightly delayed start */
 }
 
 .header-drip:nth-child(4) {
   left: 50%; /* Adjust the position for the fourth drip */
-  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the fourth drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 6.5s infinite; /* Apply both animations to the fourth drip with a slightly delayed start */
 }
 
 .header-drip:nth-child(5) {
   left: 65%; /* Adjust the position for the fifth drip */
-  animation: dripAnimation 5s infinite linear, dripDelay 5s infinite; /* Apply both animations to the fifth drip */
+  animation: dripAnimation 5s infinite linear, dripDelay 7s infinite; /* Apply both animations to the fifth drip with a slightly delayed start */
 }
