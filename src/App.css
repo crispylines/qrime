@@ -59,18 +59,45 @@
   top: 0;
   width: 5px; /* Increase the width */
   height: 300px; /* Increase the height */
-  background: linear-gradient(to bottom, rgba(251, 0, 0, 0.962) 0%, #FFFFFF 100%);
-  animation: dripAnimation 10s infinite linear, dripDelay 10s infinite; /* Add dripDelay animation */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  animation: dripAnimation 5s infinite linear; /* Increase the animation duration */
 }
 
 @keyframes dripAnimation {
-  0% { transform: translateY(-100%); } /* Start from above the screen */
-  100% { transform: translateY(100vh); } /* Move to the bottom of the screen */
+  0% { transform: translateY(-100%) translateX(0%); } /* Start from above the screen */
+  100% { transform: translateY(100vh) translateX(0%); } /* Move to the bottom of the screen */
 }
 
+/* Add the dripDelay animation */
 @keyframes dripDelay {
   0% { opacity: 0; } /* Initially hidden */
   10% { opacity: 1; } /* Fade in */
   90% { opacity: 1; } /* Stay visible */
   100% { opacity: 0; } /* Fade out */
+}
+
+/* Add multiple drips */
+.header-drip:nth-child(1) {
+  left: 5%; /* Adjust the position for the first drip */
+  animation-delay: calc(2s * random()); /* Randomize the delay for the first drip */
+}
+
+.header-drip:nth-child(2) {
+  left: 25%; /* Adjust the position for the second drip */
+  animation-delay: calc(2s * random()); /* Randomize the delay for the second drip */
+}
+
+.header-drip:nth-child(3) {
+  left: 45%; /* Adjust the position for the third drip */
+  animation-delay: calc(2s * random()); /* Randomize the delay for the third drip */
+}
+
+.header-drip:nth-child(4) {
+  left: 65%; /* Adjust the position for the fourth drip */
+  animation-delay: calc(2s * random()); /* Randomize the delay for the fourth drip */
+}
+
+.header-drip:nth-child(5) {
+  left: 85%; /* Adjust the position for the fifth drip */
+  animation-delay: calc(2s * random()); /* Randomize the delay for the fifth drip */
 }
