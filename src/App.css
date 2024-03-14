@@ -51,5 +51,20 @@
 @keyframes fireAnimation {
   0% { background-color: #000000; }
   50% { background-color: #53423b; }
-  100% { background-color: #6e9c6a; }
+  100% { background-color: #D3D3D3; }
+}
+
+.header-drip {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  animation: dripAnimation 2s infinite linear;
+}
+
+@keyframes dripAnimation {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(-50%) translateY(100vh); }
 }

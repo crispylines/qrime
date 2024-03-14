@@ -58,6 +58,7 @@ function App() {
         >
           qrime is coming
         </p>
+        <div className="header-drip"></div>
       </header>
     </div>
   );
