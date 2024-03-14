@@ -36,7 +36,7 @@ function App() {
         <nav className="top-navigation">
           <button
             className={`top-navigation-button ${isButtonOnFire ? 'on-fire' : ''}`}
-            onClick={() => handleLinkClick('/one')}
+            onClick={() => handleLinkClick('https://twitter.com/notqrime')}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -53,6 +53,8 @@ function App() {
           className="text"
           style={style}
           onClick={() => handleLinkClick('https://twitter.com/notqrime')}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           qrime is coming
         </p>
