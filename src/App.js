@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [isButtonOnFire, setIsButtonOnFire] = useState(false);
   const [style, setStyle] = useState({});
 
   const handleMouseEnter = () => {
+    setIsButtonOnFire(true);
+
     const positions = [
       { x: Math.random() * -100, y: Math.random() * 150 },
       { x: Math.random() * 50, y: Math.random() * -200 },
@@ -19,6 +22,7 @@ function App() {
   };
 
   const handleMouseLeave = () => {
+    setIsButtonOnFire(false);
     setStyle({});
   };
 
@@ -31,8 +35,10 @@ function App() {
       <header className="App-header">
         <nav className="top-navigation">
           <button
-            className="top-navigation-button"
+            className={`top-navigation-button ${isButtonOnFire ? 'on-fire' : ''}`}
             onClick={() => handleLinkClick('/one')}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             qrime
           </button>
@@ -46,8 +52,6 @@ function App() {
         <p
           className="text"
           style={style}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           onClick={() => handleLinkClick('https://twitter.com/notqrime')}
         >
           qrime is coming
