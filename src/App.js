@@ -59,6 +59,11 @@ function App() {
           qrime is coming
         </p>
         <div className="header-drip"></div>
+        <div className="header-drip2"></div>
+        {/* <div className="header-drip3"></div>
+        <div className="header-drip4"></div>
+        <div className="header-drip5"></div>
+        <div className="header-drip6"></div> */}
       </header>
     </div>
   );
