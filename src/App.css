@@ -29,7 +29,7 @@
 }
 
 .top-navigation-button {
-  background-color: #D3D3D3;
+  background-color: #CDCFCC;
   color: #000000;
   border: none;
   padding: 10px 20px;
@@ -50,7 +50,7 @@
 
 @keyframes fireAnimation {
   0% { background-color: #000000; }
-  50% { background-color: #53423b; }
-  100% { background-color: #D3D3D3; }
+  50% { background-color: #7F5D37; }
+  100% { background-color: #CDCFCC; }
 }
 
