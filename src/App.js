@@ -37,7 +37,7 @@ function App() {
           style={style}
           onClick={() => handleLinkClick('https://twitter.com/qrimeCapital')}
           onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          // onMouseLeave={handleMouseLeave}
         >
           qrime is coming
         </p>
