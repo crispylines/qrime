@@ -2,12 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [isButtonOnFire, setIsButtonOnFire] = useState(false);
   const [style, setStyle] = useState({});
 
-  // const handleMouseEnter = () => {
-  //   setIsButtonOnFire(true);
-
+  const handleMouseEnter = () => {
     const positions = [
       { x: Math.random() * -100, y: Math.random() * 150 },
       { x: Math.random() * 50, y: Math.random() * -200 },
@@ -21,8 +18,6 @@ function App() {
     });
   };
 
-
-
   const handleLinkClick = (link) => {
     window.open(link, '_blank');
   };
@@ -30,21 +25,17 @@ function App() {
   return (
     <div className="App font-link">
       <header className="App-header">
-        
-       
         <p
           className="text"
           style={style}
           onClick={() => handleLinkClick('https://twitter.com/qrimeCapital')}
           onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
         >
           qrime is coming
         </p>
-       
       </header>
     </div>
   );
-
+}
 
 export default App;
