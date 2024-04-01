@@ -22,31 +22,9 @@
 .App-link {
   color: #FFFFFF;
 }
-.top-navigation {
-  display: flex;
-  justify-content: flex-end;
-  padding: 50px;
-}
 
-.top-navigation-button {
-  background-color: #CDCFCC;
-  color: #000000;
-  border: none;
-  padding: 10px 20px;
-  margin-left: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'UnifrakturMaguntia', cursive;
-}
 
-.top-navigation-button:hover {
-  background-color: hsla(210, 7%, 88%, 0.264);
-  color: #ffffff;
-}
 
-.on-fire {
-  animation: fireAnimation 1s infinite;
-}
 
 @keyframes fireAnimation {
   0% { background-color: #000000; }
