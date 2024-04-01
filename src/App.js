@@ -34,14 +34,14 @@ function App() {
     <div className="App font-link">
       <header className="App-header">
         <nav className="top-navigation">
-          <button
+          {/* <button
             className={`top-navigation-button ${isButtonOnFire ? 'on-fire' : ''}`}
             onClick={() => handleLinkClick('https://twitter.com/qrimeCapital')}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
             qrime
-          </button>
+          </button> */}
           {/* <button
             className="top-navigation-button"
             onClick={() => handleLinkClick('/two')}
@@ -49,6 +49,7 @@ function App() {
             qrime
           </button> */}
         </nav>
+       
         <p
           className="text"
           style={style}
