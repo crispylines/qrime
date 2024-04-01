@@ -21,10 +21,7 @@ function App() {
     });
   };
 
-  const handleMouseLeave = () => {
-    setIsButtonOnFire(false);
-    setStyle({});
-  };
+
 
   const handleLinkClick = (link) => {
     window.open(link, '_blank');
