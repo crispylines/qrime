@@ -5,8 +5,8 @@ function App() {
   const [isButtonOnFire, setIsButtonOnFire] = useState(false);
   const [style, setStyle] = useState({});
 
-  const handleMouseEnter = () => {
-    setIsButtonOnFire(true);
+  // const handleMouseEnter = () => {
+  //   setIsButtonOnFire(true);
 
     const positions = [
       { x: Math.random() * -100, y: Math.random() * 150 },
