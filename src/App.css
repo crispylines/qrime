@@ -32,13 +32,3 @@
   100% { background-color: #CDCFCC; }
 }
 
-.text {
-  /* Other styles */
-
-  /* Add a slight arch */
-  transition: transform 0.5s ease-in-out;
-}
-
-.arched {
-  transform: translateY(-5px);
-}

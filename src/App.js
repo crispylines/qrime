@@ -3,7 +3,6 @@ import './App.css';
 
 function App() {
   const [style, setStyle] = useState({});
-  const [isArched, setIsArched] = useState(false);
 
   const handleMouseEnter = () => {
     const positions = [
@@ -17,11 +16,6 @@ function App() {
     setStyle({
       transform: `translate(${newPosition.x}%, ${newPosition.y}%) scale(1.6)`,
     });
-    setIsArched(true); // Apply the arched class
-  };
-
-  const handleMouseLeave = () => {
-    setIsArched(false); // Remove the arched class
   };
 
   const handleLinkClick = (link) => {
@@ -32,11 +26,10 @@ function App() {
     <div className="App font-link">
       <header className="App-header">
         <p
-          className={`text ${isArched ? 'arched' : ''}`}
+          className="text"
           style={style}
           onClick={() => handleLinkClick('https://twitter.com/qrimeCapital')}
           onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
         >
           qrime is coming
         </p>
